@@ -1,0 +1,35 @@
+<!-- Event Bubbling -->
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="outer">
+      <div id="middle">
+        <div id="inner">
+          <button id="myButton">Click me!</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      var outer = document.getElementById("outer");
+      var middle = document.getElementById("middle");
+      var inner = document.getElementById("inner");
+      var button = document.getElementById("myButton");
+
+      outer.addEventListener("click", function () {
+        console.log("Outer div clicked");
+      });
+
+      middle.addEventListener("click", function () {
+        console.log("Middle div clicked");
+      });
+
+      inner.addEventListener("click", function () {
+        console.log("Inner div clicked");
+      });
+
+      button.addEventListener("click", function () {
+        console.log("Button clicked");
+      });
+    </script>
+  </body>
+</html>
