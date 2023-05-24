@@ -12,4 +12,4 @@ function curryAdd(a) {
 }
 
 // Using the curried function
-console.log(curryAdd(2)(3)(4));
+console.log(curryAdd(2)(3)(4)); //output:9
